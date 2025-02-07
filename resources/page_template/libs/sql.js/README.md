@@ -85,7 +85,7 @@ The test files provide up to date example of the use of the api.
 #### Example **HTML** file:
 ```html
 <meta charset="utf8" />
-<html id="jamesch">
+<html>
   <script src='/dist/sql-wasm.js'></script>
   <script>
     config = {
