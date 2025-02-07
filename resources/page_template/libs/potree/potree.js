@@ -80242,7 +80242,7 @@ ENDSEC
 				//header.addClass('accordion-header ui-widget');
 				//content.addClass('accordion-content ui-widget');
 
-				content.hide();
+				// content.hide();
 
 				header.click(() => {
 					content.slideToggle();
