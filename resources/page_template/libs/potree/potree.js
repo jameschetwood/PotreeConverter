@@ -75598,15 +75598,15 @@ ENDSEC
 			<div class="scene_content selectable">
 				<ul class="pv-menu-list">
 
-				<li>
+				<li class="jfork_hide">
 				<span data-i18n="appearance.point_size"></span>:&nbsp;<span id="lblPointSize"></span> <div id="sldPointSize"></div>
 				</li>
-				<li>
+				<li class="jfork_hide">
 				<span data-i18n="appearance.min_point_size"></span>:&nbsp;<span id="lblMinPointSize"></span> <div id="sldMinPointSize"></div>
 				</li>
 
 				<!-- SIZE TYPE -->
-				<li>
+				<li class="jfork_hide">
 					<label for="optPointSizing" class="pv-select-label" data-i18n="appearance.point_size_type">Point Sizing </label>
 					<select id="optPointSizing" name="optPointSizing">
 						<option>FIXED</option>
@@ -75616,7 +75616,7 @@ ENDSEC
 				</li>
 
 				<!-- SHAPE -->
-				<li>
+				<li class="jfork_hide">
 					<label for="optShape" class="pv-select-label" data-i18n="appearance.point_shape"></label><br>
 					<select id="optShape" name="optShape">
 						<option>SQUARE</option>
@@ -75625,12 +75625,12 @@ ENDSEC
 					</select>
 				</li>
 
-				<li id="materials_backface_container">
+				<li id="materials_backface_container" class="jfork_hide">
 				<label><input id="set_backface_culling" type="checkbox" /><span data-i18n="appearance.backface_culling"></span></label>
 				</li>
 				
 				<!-- OPACITY -->
-				<li><span data-i18n="appearance.point_opacity"></span>:<span id="lblOpacity"></span><div id="sldOpacity"></div></li>
+				<li class="jfork_hide"><span data-i18n="appearance.point_opacity"></span>:<span id="lblOpacity"></span><div id="sldOpacity"></div></li>
 
 				<div class="divider">
 					<span>Attribute</span>

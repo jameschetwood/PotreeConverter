@@ -4,7 +4,7 @@
 		display: none !important;
 	}
 
-	#tools img:not(:nth-child(1)):not(:nth-last-child(2)):not(:last-child) {
+	#tools img:not([src*="resources/icons/angle.png"]):not([src*="resources/icons/distance.svg"]):not([src*="resources/icons/annotation.sv"]):not([src*="resources/icons/reset_tools.svg"]) {
 		display: none !important;
 	}
 </style>
@@ -126,7 +126,7 @@
 
 			<div id="scene_objects"></div>
 
-			<div class="divider"><span>Properties</span></div>
+			<!-- <div class="divider"><span>Properties</span></div> -->
 
 			<div id="scene_object_properties"></div>
 		</div>
