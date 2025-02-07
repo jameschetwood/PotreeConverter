@@ -1,4 +1,5 @@
 <style>
+	.jfork_hide.jfork_hide,
 	#jfork_appearance_content {
 		display: none !important;
 	}
@@ -84,11 +85,11 @@
 				</selectgroup>
 			</li>
 
-			<div class="divider"><span>Clipping</span></div>
+			<div class="divider jfork_hide"><span>Clipping</span></div>
 
-			<li id="clipping_tools"></li>
+			<li id="clipping_tools" class="jfork_hide"></li>
 
-			<li>
+			<li class="jfork_hide">
 				<selectgroup id="cliptask_options">
 					<option id="cliptask_options_none" value="NONE">None</option>
 					<option id="cliptask_options_highlight" value="HIGHLIGHT">Highlight</option>
@@ -97,18 +98,18 @@
 				</selectgroup>
 			</li>
 
-			<li>
+			<li class="jfork_hide">
 				<selectgroup id="clipmethod_options">
 					<option id="clipmethod_options_any" value="INSIDE_ANY">Inside Any</option>
 					<option id="clipmethod_options_all" value="INSIDE_ALL">Inside All</option>
 				</selectgroup>
 			</li>
 			
-			<div class="divider"><span>Navigation</span></div>
+			<div class="divider jfork_hide"><span>Navigation</span></div>
 
-			<li id="navigation"></li>
+			<li id="navigation" class="jfork_hide"></li>
 
-			<li><span data-i18n="appearance.move_speed"></span>: <span id="lblMoveSpeed"></span><div id="sldMoveSpeed"></div></li>
+			<li class="jfork_hide"><span data-i18n="appearance.move_speed"></span>: <span id="lblMoveSpeed"></span><div id="sldMoveSpeed"></div></li>
 		</div>
 
 		<!-- SCENE -->
