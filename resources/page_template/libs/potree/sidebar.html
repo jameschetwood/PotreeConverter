@@ -1,6 +1,5 @@
 <style>
-	.jfork_hide.jfork_hide,
-	#jfork_appearance_content {
+	.jfork_hide.jfork_hide {
 		display: none !important;
 	}
 
@@ -11,7 +10,7 @@
 
 
 <div id="sidebar_root" class="">
-	<div id="sidebar_header" style="display: none;">
+	<div id="sidebar_header" class="jfork_hide">
 		<span id="potree_branding" class="potree_sidebar_brand">
 			<a href="http://potree.org" target="_blank">potree.org</a> 
 			<span style="margin: 0px 3px; color: #9AA1A4"> - </span> 
@@ -33,8 +32,8 @@
 
 
 		<!-- APPEARANCE -->
-		<h3 id="menu_appearance" style="display: none;"><span data-i18n="tb.rendering_opt"></span></h3>
-		<div style="display: none;" id="jfork_appearance_content">
+		<h3 id="menu_appearance" class="jfork_hide"><span data-i18n="tb.rendering_opt"></span></h3>
+		<div class="jfork_hide">
 			<ul class="pv-menu-list">
 				<li><span data-i18n="appearance.nb_max_pts"></span>: <span id="lblPointBudget"></span> <div id="sldPointBudget"></div></li>
 				<li><span data-i18n="appearance.field_view"></span>: <span id="lblFOV"></span><div id="sldFOV"></div></li>
@@ -126,14 +125,14 @@
 
 			<div id="scene_objects"></div>
 
-			<!-- <div class="divider"><span>Properties</span></div> -->
+			<div class="divider jfork_hide"><span>Properties</span></div>
 
 			<div id="scene_object_properties"></div>
 		</div>
 
 		<!-- Classification -->
-		<h3 id="menu_filters" style="display: none;"><span data-i18n="tb.filters_opt"></span></h3>
-		<div style="display: none;">
+		<h3 id="menu_filters" class="jfork_hide"><span data-i18n="tb.filters_opt"></span></h3>
+		<div class="jfork_hide">
 
 			<div class="divider"><span>Classification</span></div>
 
@@ -181,7 +180,7 @@
 		</div>
 		
 		<!-- ABOUT -->
-		<h3 id="menu_about" class="jfork_hide" style="display: none;"><span data-i18n="tb.about_opt"></span></h3>
+		<h3 id="menu_about" class="jfork_hide"><span data-i18n="tb.about_opt"></span></h3>
 		<div class="jfork_hide">
 			<ul class="pv-menu-list">
 				<li><a href="http://potree.org" target="_blank">Potree</a> is a viewer for large point cloud / LIDAR data sets, developed at the Vienna University of Technology. 
