@@ -79564,6 +79564,17 @@ ENDSEC
 				}
 			});
 
+			// Auto select the right file so Attributes are visible on page load
+			tree.on('ready.jstree', () => {
+				// Get items of "Point Clouds" (parent item in list)
+				const pointCloudsRoot = $("#jstree_scene").jstree().get_json("pointclouds");
+				// There should only be 1 child so select it if this is the case
+				if(pointCloudsRoot && pointCloudsRoot.children && pointCloudsRoot.children.length === 1) {
+					const child = pointCloudsRoot.children[0];
+					tree.jstree('select_node', child.id); 
+				}
+			});
+
 
 			let onPointCloudAdded = (e) => {
 				let pointcloud = e.pointcloud;
