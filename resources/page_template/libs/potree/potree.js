@@ -80298,6 +80298,8 @@ ENDSEC
 
 			const sldPointBudget = this.dom.find('#sldPointBudget');
 
+			this.viewer.setPointBudget(10000000); // Add this line to set the viewer's point budget
+	
 			sldPointBudget.slider({
 				value: this.viewer.getPointBudget(),
 				min: 100 * 1000,
