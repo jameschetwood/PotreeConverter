@@ -75914,6 +75914,24 @@ ENDSEC
 				const blacklist = [
 					"POSITION_CARTESIAN",
 					"position",
+					//
+				    // "intensity",
+				    // "intensity gradient",
+				    // "return number",
+				    // "number of returns",
+				    // "classification",
+				    // "scan angle rank",
+				    // "user data",
+				    // "point source id",
+				    // "gps-time",
+				    // "rgba",
+				    // "label1",
+				    // "elevation",
+				    // "color",
+				    // "matcap",
+				    // "indices",
+				    // "level of detail",
+				    // "composite"
 				];
 
 				options = options.filter(o => !blacklist.includes(o));
