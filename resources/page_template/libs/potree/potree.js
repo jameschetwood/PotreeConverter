@@ -75934,12 +75934,22 @@ ENDSEC
 				    // "composite"
 				];
 
-				options = options.filter(o => !blacklist.includes(o));
+				const whitelist = [
+					"rgba", 
+					"spall", 
+					"crack", 
+					"mortar_loss", 
+					"deformation"
+				]
+
+				// options = options.filter(o => !blacklist.includes(o));
 
 				let attributeSelection = panel.find('#optMaterial');
 				for(let option of options){
-					let elOption = $(`<option>${option}</option>`);
-					attributeSelection.append(elOption);
+					if(whitelist.some((w) => w.toLowerCase() === option.toLowerCase())) {
+						let elOption = $(`<option>${option}</option>`);
+						attributeSelection.append(elOption);
+					}
 				}
 
 				let updateMaterialPanel = (event, ui) => {
