@@ -75946,8 +75946,11 @@ ENDSEC
 
 				let attributeSelection = panel.find('#optMaterial');
 				for(let option of options){
-					if(whitelist.some((w) => w.toLowerCase() === option.toLowerCase())) {
-						let elOption = $(`<option>${option}</option>`);
+					if(option === "rgba") {
+						let elOption = $(`<option value="${option}">3D model</option>`);
+						attributeSelection.append(elOption);
+					} else if(whitelist.some((w) => w.toLowerCase() === option.toLowerCase())) {
+						let elOption = $(`<option value="${option}">${option}</option>`);
 						attributeSelection.append(elOption);
 					}
 				}
